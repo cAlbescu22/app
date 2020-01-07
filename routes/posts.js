@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
     res.json({ message: err });
   }
 });
-router.post("/", async (req, res) => {
+router.post("/register", async (req, res) => {
   const post = new Post({
     user: req.body.username,
     password: req.body.password
